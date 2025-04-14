@@ -1,73 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentform</title>
+    
+</head>
 
-  
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+<body>
 
+    <div class="wrapper">
+        <form action="submit_form.php" method="POST">
+            <h1>Student Fill-Up Form</h1>
+            <div class="input-box">
+                <input type="text" id= "fname "name="fname" placeholder="Enter Your Full Name" required>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" placeholder=" Enter Your Email" required>
+            </div>
+            
+    
+           <div class="dropdown">
+                <select id="select" name="select">
+                    <option value="" disable selected hidden>Gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+           </div>
 
-    <link rel="stylesheet" href="styles.css" />
-
-    <title>Responsive login form</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="login">
-        <div class="login__content">
-          <img class="login__img" src=".bg-login.png" alt="Login image" />
-
-          <form class="login__form">
-            <div>
-              <h1 class="login__title">
-                <span>Welcome</span> Back
-              </h1>
-
-              <p class="login__description">
-                Welcome! Please login to continue.
-              </p>
+            <div class="input-box">
+                <input type="number" id="age "name="age" placeholder="Enter Your Age" required>
             </div>
 
-            <div>
-              <div class="login__inputs">
-                <div>
-                  <label for="email" class="login__label">Email</label>
-                  <input class="login__input" type="email" id="email" placeholder="Enter your email address" required />
-                </div>
-
-                <div>
-                  <label for="password" class="login__label">Password</label>
-                  <div class="login__box">
-                    <input class="login__input" type="password" id="password" placeholder="Enter your password" required />
-                    <i class="ri-eye-off-line login__eye" id="input-icon"></i>
-                  </div>
-                </div>
-              </div>
-
-              <div class="login__check">
-                <label class="login__check-label" for="check">
-                  <input class="login__check-input" type="checkbox" id="check" />
-                  <i class="ri-check-line login__check-icon"></i>
-                  Remember me
-                </label>
-              </div>
+            <div class="input-box">
+                <input type="text" id= "course" name="course" placeholder="Enter Your Course" required>
             </div>
 
-            <div>
-              <div class="login__buttons">
-                <button class="login__button">Log In</button>
-                <button class="login__button login__button-ghost">Sign Up</button>
-              </div>
+            <button type="submit" class="btn">Submit Form</button>
 
-              <a class="login__forgot" href="#">Forgot Password?</a>
-            </div>
-          </form>
+
+            
+        
         </div>
-      </div>
+        </form>
+
+
     </div>
-
-
-  <script src="main.js"></script>
-  </body>
-</html>
+    
